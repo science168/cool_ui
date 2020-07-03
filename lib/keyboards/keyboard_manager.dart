@@ -167,10 +167,10 @@ class CoolKeyboard {
       }
     });
 
-    BackButtonInterceptor.add((_) {
-      CoolKeyboard.sendPerformAction(TextInputAction.done);
-      return true;
-    }, zIndex: 1, name: 'CustomKeyboard');
+   // BackButtonInterceptor.add((_) {
+   //   CoolKeyboard.sendPerformAction(TextInputAction.done);
+   //   return true;
+   // }, zIndex: 1, name: 'CustomKeyboard');
   }
 
   static hideKeyboard({bool animation = true}) {
@@ -180,7 +180,7 @@ class CoolKeyboard {
       }
       clearTask = null;
     }
-    BackButtonInterceptor.removeByName('CustomKeyboard');
+   // BackButtonInterceptor.removeByName('CustomKeyboard');
     if (_root.hasKeyboard && _pageKey != null) {
       // _pageKey.currentState.animationController
       //     .addStatusListener((AnimationStatus status) {
